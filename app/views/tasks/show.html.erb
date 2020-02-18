@@ -1,0 +1,14 @@
+<h1>Info of Task</h1>
+
+<p>Name: <%= @task.title %></p>
+<p>Address: <%= @task.details %></p>
+<p>Stars: <%= @task.completed %></p>
+
+
+<p>
+  <%= link_to 'Edit', edit_task_path(@task) %>
+</p>
+
+<p>
+<%= link_to 'Remove this task', task_path, method: :delete %>
+</p>
